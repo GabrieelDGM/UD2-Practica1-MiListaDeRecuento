@@ -10,55 +10,52 @@ export default function Home() {
       style={styles.background}
       resizeMode="cover"
     >
-      <View style={styles.header}>
+      <View style={styles.container}>
         <Text style={styles.header}>Lista de Anime</Text>
+        </View>
 
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Ver Animes</Text>
         </TouchableOpacity>
-      </View>
     </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 4,
-    backgroundColor: "#ffffffff",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: 50,
-  },
+
   header: {
      fontSize: 35,
     fontWeight: "bold",
-    color: "#3e3e3eff",
-    marginBottom: 25,
+    color: "#d41515ff",
+    marginBottom: 600,
+    textShadowColor:"rgba(255,255,255,0.8)",
+    textAlign: "center",
+    textShadowOffset: { width: 5, height: 2 },
+    textShadowRadius: 4,
+    marginTop: 15,
     },
-  image: {
-    width: 300,
-    height: 500,
-    borderRadius: 15,
-    marginBottom: 25,
-  },
   button: {
-    backgroundColor: "#457B9D",
-    paddingVertical: 14,
-    paddingHorizontal: 40,
-    borderRadius: 12,
+    backgroundColor: "#fe0000ff",
+    paddingVertical: 15,
+    paddingHorizontal: 50,
+    borderRadius: 15,
+    marginTop: -20,
   },
   buttonText: {
     color: "#fff",
     fontSize: 18,
-    fontWeight: "500",
+    fontWeight: "700",
   },
     background: {
     flex: 1,
     width: "100%",
     height: "100%",
-    justifyContent: "center",
     alignItems: "center",
+    justifyContent: "center",
   },
+  container :{
+    alignItems: "center",
+  }
 });
 
 
