@@ -2,82 +2,82 @@ import React from "react";
 import { FlatList, Image, StyleSheet, Text, View } from "react-native";
 
 export default function AnimeList() {
-    const animes = [
-        {
-            id: 1,
-            nombre: "One Piece",
-            categoria: "Shōnen",
-            precio: "100 millones USD",
-            imagen: require("../assets/images/onepiece.jpg"),
-        },
-        {
-            id: 2,
-            nombre: "Naruto",
-            categoria: "Shōnen",
-            precio: "95 millones USD",
-            imagen: require("../assets/images/naruto.jpg"),
-        },
-        {
-            id: 3,
-            nombre: "Shingeki no Kyojin",
-            categoria: "Seinen",
-            precio: "80 millones USD",
-            imagen: require("../assets/images/ataque.jpg"),
-        },
-        {
-            id: 4,
-            nombre: "Kimetsu no Yaiba",
-            categoria: "Shōnen",
-            precio: "70 millones USD",
-            imagen: require("../assets/images/kimtesu.jpg"),
-        },
-        {
-            id: 5,
-            nombre: "Dandanda",
-            categoria: "Shōnen",
-            precio: "50 millones USD",
-            imagen: require("../assets/images/dadan.jpg"),
-        },
-        {
-            id: 6,
-            nombre: "Jujutsu Kaisen",
-            categoria: "Shōnen",
-            precio: "60 millones USD",
-            imagen: require("../assets/images/jujutsu.jpg"),
-        },
-        {
-            id: 7,
-            nombre: " Solo Leveling",
-            categoria: "Shōnen",
-            precio: "45 millones USD",
-            imagen: require("../assets/images/solo.jpg"),
-        },
-        {
-            id: 8,
-            nombre: "Sono Bisque Doll wa Koi wo Suru",
-            categoria: "Romncom",
-            precio: "40 millones USD",
-            imagen: require("../assets/images/sono.jpg"),
+  const animes = [
+    {
+      id: 1,
+      nombre: "One Piece",
+      categoria: "Categoria: Shōnen",
+      precio: "Precio: 100 millones USD",
+      imagen: require("../assets/images/onepiece.jpg"),
+    },
+    {
+      id: 2,
+      nombre: "Naruto",
+      categoria: "Categoria:Shōnen",
+      precio: "Precio: 95 millones USD",
+      imagen: require("../assets/images/naruto.jpg"),
+    },
+    {
+      id: 3,
+      nombre: "Shingeki no Kyojin",
+      categoria: "Categoria: Seinen",
+      precio: "Precio: 80 millones USD",
+      imagen: require("../assets/images/ataque.jpg"),
+    },
+    {
+      id: 4,
+      nombre: "Kimetsu no Yaiba",
+      categoria: "Categoria: Shōnen",
+      precio: "Precio: 70 millones USD",
+      imagen: require("../assets/images/kimetsu.jpg"),
+    },
+    {
+      id: 5,
+      nombre: "Dandanda",
+      categoria: "Categoria Shōnen",
+      precio: "Precio: 50 millones USD",
+      imagen: require("../assets/images/dadan.jpg"),
+    },
+    {
+      id: 6,
+      nombre: "Jujutsu Kaisen",
+      categoria: "Categoria: Shōnen",
+      precio: "Precio 60 millones USD",
+      imagen: require("../assets/images/jujutsu.jpg"),
+    },
+    {
+      id: 7,
+      nombre: " Solo Leveling",
+      categoria: "Categoria: Shōnen",
+      precio: "Precio: 45 millones USD",
+      imagen: require("../assets/images/solo.jpg"),
+    },
+    {
+      id: 8,
+      nombre: "Sono Bisque Doll wa Koi wo Suru",
+      categoria: "Categoria: Romncom",
+      precio: "Precio: 40 millones USD",
+      imagen: require("../assets/images/sono.jpg"),
 
-        },
-        {
-            id: 9,
-            nombre: "Black Clover",
-            categoria: "Shōnen",
-            precio: "55 millones USD",
-            imagen: require("../assets/images/black.jpg"),
-        },
-        {
-            id: 10,
-            nombre: "Monster",
-            categoria: "Psicológico",
-            precio: "30 millones USD",
-            imagen: require("../assets/images/monster.jpg"),
-        }
-        
+    },
+    {
+      id: 9,
+      nombre: "Black Clover",
+      categoria: " Categoria: Shōnen",
+      precio: " Precio 55 millones USD",
+      imagen: require("../assets/images/black.jpg"),
+    },
+    {
+      id: 10,
+      nombre: "Monster",
+      categoria: "Categoria: Psicológico",
+      precio: "Precio: 30 millones USD",
+      imagen: require("../assets/images/monster.jpg"),
+    }
 
-    ];
- return (
+
+  ];
+  return (
     <View style={styles.container}>
       <Text style={styles.title}>Lista de Animes</Text>
 
@@ -102,21 +102,21 @@ export default function AnimeList() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FDF6F0",
+    backgroundColor: "#e1d7ceff",
     padding: 20,
   },
   title: {
-    fontSize: 28,
+    fontSize: 30,
     fontWeight: "bold",
     textAlign: "center",
-    marginBottom: 20,
+    marginBottom: 10,
     color: "#5D534A",
   },
   card: {
-    backgroundColor: "#FFEFE7",
+    backgroundColor: "#fefefdff",
     borderRadius: 15,
-    padding: 12,
-    marginBottom: 16,
+    padding: 15,
+    marginBottom: 20,
     flexDirection: "row",
     alignItems: "center",
     gap: 12,
@@ -131,17 +131,17 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   name: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: "bold",
     color: "#4A4A4A",
   },
   category: {
-    fontSize: 14,
+    fontSize: 17,
     color: "#7D6E83",
     marginTop: 4,
   },
   price: {
-    fontSize: 14,
+    fontSize: 15,
     fontWeight: "bold",
     color: "#E26A6A",
     marginTop: 6,

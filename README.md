@@ -1,51 +1,52 @@
-# Welcome to your Expo app 👋
+📝 Lista de Anime — Proyecto React Native (Expo)
+🎯 Objetivo del Proyecto
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este proyecto tiene como objetivo crear una aplicación móvil en React Native (Expo) que permita visualizar una lista de animes con su nombre, categoría y precio aproximado.
+El diseño sigue la estructura de una lista tipo “cards” con una pantalla de inicio (portada) y una pantalla de listado.
 
-## Get started
+📱 Diseño General de la Aplicación
+🏠 Pantalla de Inicio (index.tsx)
 
-1. Install dependencies
+Muestra el título principal “Lista de Anime”.
 
-   ```bash
-   npm install
-   ```
+Fondo con imagen usando ImageBackground.
 
-2. Start the app
+Un botón “Ver Animes” que sirve como transición hacia la lista.
 
-   ```bash
-   npx expo start
-   ```
+Se ha cuidado la estética, con colores personalizados, sombras y tipografía clara.
 
-In the output, you'll find options to open the app in a
+📋 Pantalla de Lista (list.tsx)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Muestra un listado de animes con:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+🖋️ Nombre del anime
 
-## Get a fresh project
+🎭 Categoría o género japonés principal
 
-When you're ready, run:
+💰 Costo aproximado de producción
 
-```bash
-npm run reset-project
-```
+El listado se genera con un FlatList.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Cada anime se muestra dentro de una tarjeta (card) con estilo individual.
 
-## Learn more
+🧩 Estructura del Proyecto
 
-To learn more about developing your project with Expo, look at the following resources:
+![Estructura del Proyecto](./assets/images/estrucutra1.png)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+📂 Enlaces a los archivos principales
+![Codigo index](./app/index.tsx)
+![Codigo list](./app/list.tsx)
 
-## Join the community
+⚙️ Tecnologías Utilizadas
 
-Join our community of developers creating universal apps.
+React Native con Expo
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-"# UD2-Practica1-MiListaDeRecuento" 
+TypeScript
+
+Expo Router (para navegación entre pantallas)
+
+FlatList para renderizar la lista de animes
+
+ImageBackground para fondo en portada
+
+Hooks (useState) para el manejo del estado local
