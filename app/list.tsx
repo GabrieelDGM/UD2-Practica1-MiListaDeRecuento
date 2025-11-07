@@ -8,7 +8,7 @@ export default function AnimeList() {
             nombre: "One Piece",
             categoria: "Shōnen",
             precio: "100 millones USD",
-            imagen: require("../assets/images/animes/one piece.jpg"),
+            imagen: require("../assets/images/animes/onepiece.jpg"),
         },
         {
             id: 2,
