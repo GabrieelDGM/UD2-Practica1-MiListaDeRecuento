@@ -1,43 +1,43 @@
 import "expo-router/entry";
 import React from "react";
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { ImageBackground, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 
 export default function Home() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.header}>Lista De Anime</Text>
+       <ImageBackground
+      source={require("../assets/images/portada.jpg")}
+      style={styles.background}
+      resizeMode="cover"
+    >
+      <View style={styles.header}>
+        <Text style={styles.header}>Lista de Anime</Text>
 
-      <Image
-        source={require("../assets/images/portada.jpg")}
-        style={styles.image}
-        resizeMode="cover"
-      />
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Ver Animes</Text>
         </TouchableOpacity>
-      
-    </View>
+      </View>
+    </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#fff",
+    flex: 4,
+    backgroundColor: "#ffffffff",
     alignItems: "center",
     justifyContent: "center",
-    padding: 20,
+    padding: 50,
   },
   header: {
-    fontSize: 30,
+     fontSize: 35,
     fontWeight: "bold",
-    color: "#E63946",
-    marginBottom: 20,
-  },
+    color: "#3e3e3eff",
+    marginBottom: 25,
+    },
   image: {
-    width: 280,
-    height: 380,
+    width: 300,
+    height: 500,
     borderRadius: 15,
     marginBottom: 25,
   },
@@ -50,6 +50,17 @@ const styles = StyleSheet.create({
   buttonText: {
     color: "#fff",
     fontSize: 18,
-    fontWeight: "600",
+    fontWeight: "500",
+  },
+    background: {
+    flex: 1,
+    width: "100%",
+    height: "100%",
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
+
+
+
+
